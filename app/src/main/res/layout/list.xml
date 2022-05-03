@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="10dp"
+    android:background="@color/material_on_primary_emphasis_medium">
+   <androidx.appcompat.widget.AppCompatImageView
+       android:layout_width="210dp"
+       android:layout_height="250dp"
+       android:scaleType="fitXY"
+       android:id="@+id/img"
+       android:background="@drawable/shape_corner"
+       android:padding="10px"/>
+   <TextView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:id="@+id/title"
+       android:textSize="20dp"
+       android:layout_below="@+id/img"
+       android:textColor="@color/black"/>
+     <TextView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:id="@+id/content"
+         android:ems="20"
+         android:ellipsize="end"
+         android:maxLines="2"
+         android:layout_below="@+id/title"/>
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:id="@+id/author"
+          android:textColor="#A52A2A"
+          android:textSize="16dp"
+          android:layout_below="@+id/content"/>
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:id="@+id/publishTime"
+          android:layout_below="@+id/author" />
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:id="@+id/aid"
+          android:visibility="invisible"/>
+</RelativeLayout>

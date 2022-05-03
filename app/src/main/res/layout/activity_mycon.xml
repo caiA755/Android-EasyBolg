@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="10dp"
+    android:background="@color/material_on_primary_emphasis_medium">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_above="@+id/img"/>
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="130dp"
+        android:layout_height="100dp"
+        android:scaleType="fitXY"
+        android:id="@+id/img"
+        android:paddingTop="16dp"
+        android:background="@drawable/shape_corner" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/title"
+        android:paddingTop="16dp"
+        android:textSize="18dp"
+        android:layout_toRightOf="@+id/img"
+        android:textColor="@color/black"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/content"
+        android:ems="20"
+        android:layout_marginLeft="10dp"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:layout_toRightOf="@+id/img"
+        android:layout_below="@+id/title"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/author"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/img"
+        android:textColor="#A52A2A"
+        android:textSize="16dp"
+        android:layout_below="@+id/content"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/publishTime"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/img"
+        android:layout_below="@+id/author" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/aid"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/img"
+        android:visibility="invisible"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.6dp"
+        android:background="#BFBDBD" />
+
+</RelativeLayout>

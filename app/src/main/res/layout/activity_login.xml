@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivityLogin"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:padding="50dp"
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="登录 Sign in"
+            android:textStyle="italic"
+            android:textSize="20dp"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="  账号"
+            android:textColor="#787777"
+            android:layout_marginTop="20dp"
+            android:id="@+id/editUser"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="14dp"
+            android:textColor="#787777"
+            android:hint="  密码"
+            android:inputType="textPassword"
+            android:id="@+id/editPwd"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="忘记密码"
+            android:textAlignment="textEnd"
+            android:id="@+id/txtForgetPwd"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="登录"
+            android:textSize="18dp"
+            android:id="@+id/btnLogin"
+            android:background="@drawable/shape_btn"
+            android:layout_marginTop="20dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:text="没有账户？注册"
+            android:textAlignment="center"
+            android:id="@+id/txtRegister"/>
+    </LinearLayout>
+</LinearLayout>
