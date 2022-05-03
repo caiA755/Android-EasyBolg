@@ -1,0 +1,12 @@
+1.附加数据库 
+如果数据库不是window身份验证，是sql server身份验证，需要修改WebApi_Publish下的web.config中的connectionStrings
+  <connectionStrings>
+    <add connectionString="Data Source=.;Initial Catalog=StudentDB;Integrated Security=True;MultipleActiveResultSets=true;" name="connStr" />
+  </connectionStrings>
+改为
+< connectionStrings>
+   <add  name="connStr" connectionString="server=服务器名;database=数据库名;uid=用户名;password=密码"providerName="System.Data.SqlClient"/>
+   </ connectionStrings>
+2.IIS部署webapi_publish 再运行部署的ip地址
+3.修改app下的app\src\main\java\com\example\myapp\ActivityIndex中的
+ public static  String ip="http://192.168.128.224/" 的IP地址为IIS部署配置的ip地址
